@@ -1,11 +1,17 @@
-# Workflows
+# Workflows [No Indentation required for naming the workflow}
 name: Hello
 
+#On tell when he workflow should run (Give indentation by tab)
 on: 
   workflow_dispatch: 
-# Jobs
+  
+# Jobs tell what the workflow should do. there can be one or more than one jobs, we write Jobs
+# Jobs ia an onject so needs indentation.
+
 jobs:
+  # 1st Job ( give indentation)
   say-hello:
+    
     runs-on: ubuntu-latest
     steps:
       - name: Say hello to everyone
